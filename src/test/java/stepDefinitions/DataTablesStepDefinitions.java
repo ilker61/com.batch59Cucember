@@ -55,5 +55,7 @@ public class DataTablesStepDefinitions {
     @Then("isim bolumunde {string} olustugunu kontrol eder")
     public void isimBolumundeOlustugunuKontrolEder(String firstname) {
         Assert.assertTrue(dataTablesPage.aramaSonucIlkElement.getText().contains(firstname));
+
+        // aramaSonucIlkElement locator yenilemek gerekiyor
     }
 }
