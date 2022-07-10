@@ -27,7 +27,6 @@ Feature: US09 Datatables sitesine 5 farkli giris yapalim
     Then isim bolumunde "<firstname>" olustugunu kontrol eder
   And sayfayi kapatir
 
-
 Examples:
     |firstname|lastname|position|office|extencion|startDate|salary|
     |Alim     |Alim    |qa      |ankara|UI       |2021-10-11|10000|
