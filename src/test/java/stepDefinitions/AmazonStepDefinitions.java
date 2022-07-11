@@ -28,6 +28,20 @@ public class AmazonStepDefinitions {
         String actualAramaSonucStr=amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
+    @Then("sonuc sayisinin {int} den fazla oldugunu teste eder")
+    public void sonucSayisininDenFazlaOldugunuTesteEder(int sonucSayisi) {
+
+        String str=amazonPage.aramaSonucElementi.getText();
+        int ilkSpace= str.indexOf(" ");
+        int ikinciSpace= str.indexOf(" ", ilkSpace+1);
+        int ucuncuSpace= str.indexOf(" ", ikinciSpace+1);
+
+        String sonuc=str.substring(ikinciSpace+1, ucuncuSpace);
+
+        int sonucInt= Integer.valueOf(sonuc);
+
+        Assert.assertTrue(sonucInt>sonucSayisi);
+    }
 
     @Then("kullanici Java icin arama yapar")
     public void kullanici_java_icin_arama_yapar() {

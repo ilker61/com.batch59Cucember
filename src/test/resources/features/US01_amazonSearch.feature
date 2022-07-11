@@ -22,3 +22,11 @@ Feature: US01 Kullanici Amazon Sayfasinda Arama Yapar
     And kullanici iphone icin arama yapar
     And sonuclarin iphone icerdigini test eder
     And sayfayi kapatir
+
+  Scenario: TC04 nutella arama sonuc sayisini karsilastirir
+
+    Given kullanici ana sayfasinda
+    Then kullanici Nutella icin arama yapar
+    Then sonuclarin Nutella icerdigini kontrol eder
+    Then sonuc sayisinin 100 den fazla oldugunu teste eder
+    Then sayfayi kapatir

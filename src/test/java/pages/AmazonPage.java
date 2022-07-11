@@ -13,6 +13,8 @@ public class AmazonPage {
     public WebElement  aramaKutusu;
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement aramaSonucElementi;
+    @FindBy(xpath = "//*[@id=\"search\"]/span/div/h1/div/div[1]/div/div/span[1]")
+    public WebElement sonucSayisi;
 
 
 
