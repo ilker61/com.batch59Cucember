@@ -37,9 +37,7 @@ public class AmazonStepDefinitions {
         int ucuncuSpace= str.indexOf(" ", ikinciSpace+1);
 
         String sonuc=str.substring(ikinciSpace+1, ucuncuSpace);
-
         int sonucInt= Integer.valueOf(sonuc);
-
         Assert.assertTrue(sonucInt>sonucSayisi);
     }
 
@@ -58,12 +56,14 @@ public class AmazonStepDefinitions {
     public void kullanici_iphone_icin_arama_yapar() {
         amazonPage.aramaKutusu.sendKeys("iphone" + Keys.ENTER);
     }
+
     @When("sonuclarin iphone icerdigini test eder")
     public void sonuclarin_iphone_icerdigini_test_eder() {
         String arananKelime1="iphone";
         String actualAramaSonucStr1=amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucStr1.contains(arananKelime1));
     }
+
     @Given("kullanici {string} icin arama yapar")
     public void kullanici_icin_arama_yapar(String istenenKelime) {
         amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
