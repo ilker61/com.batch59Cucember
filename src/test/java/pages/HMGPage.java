@@ -10,7 +10,6 @@ public class HMGPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     @FindBy(xpath = "(//a[@class='nav-link'])[7]")
     public WebElement loginButonu;
 
