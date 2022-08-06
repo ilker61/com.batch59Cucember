@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
        features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@datatable",
-        dryRun = true
+        tags = "@RoomGet",
+        dryRun = false
 )
 
 
