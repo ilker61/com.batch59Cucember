@@ -50,7 +50,26 @@ public class US_009_Pages {
     @FindBy(xpath = "//input[@name='phone']")
     public WebElement phone;
 
+    @FindBy(xpath = "//select[@name='gender']")
+    public WebElement gender;
 
+    @FindBy(xpath = "//select[@name='bloodGroup']")
+    public WebElement bloodGroup;
+
+    @FindBy(xpath = "//input[@name='adress']")
+    public WebElement adress;
+
+    @FindBy(xpath = "//textarea[@id='patient-description']")
+    public WebElement description;
+
+    @FindBy(xpath = "//select[@name='user.id']")
+    public WebElement user;
+
+    @FindBy(xpath = "//select[@name='country.id']")
+    public WebElement country;
+
+    @FindBy(xpath = "//button[@id='save-entity']/span")
+    public WebElement saveButton;
 
 
 
