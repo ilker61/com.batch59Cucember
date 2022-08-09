@@ -15,10 +15,55 @@ public class US_009_Pages {
     public WebElement accountMenu;
 
     @FindBy(xpath = "//a[@id='login-item']/span")
-    public WebElement singIn;
+    public WebElement firstSingIn;
 
     @FindBy(xpath = "//input[@name='username']")
     public WebElement userName;
+
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary']/span")
+    public WebElement SecondSignIn;
+
+    @FindBy(xpath = "//li[@id='entity-menu']/a/span")
+    public WebElement MyPages;
+
+    @FindBy(xpath = "//a[@class='dropdown-item']/span")
+    public WebElement searchPatient;
+
+    @FindBy(xpath = "//input[@name='ssn']")
+    public WebElement patientSsnSearchBox;
+
+    @FindBy(xpath = "(//span[@class='d-none d-md-inline'])[2]/span")
+    public WebElement edit;
+
+    @FindBy(xpath = "//input[@name='firstName']")
+    public WebElement firstName;
+
+    @FindBy(xpath = "//input[@name='lastName']")
+    public WebElement lastName;
+
+    @FindBy(xpath = "//input[@name='birthDate']")
+    public WebElement birtDate;
+
+    @FindBy(xpath = "//input[@name='phone']")
+    public WebElement phone;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
